@@ -1,0 +1,180 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*h4 {*/
+/*    text-align: center;*/
+/*}*/
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 10px;
+    place-items: center;
+}
+
+.dice-container {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+}
+.dice-container img {
+    width: 75px;
+}
+
+.dice-container input {
+    display: none;
+}
+
+.container input {
+    display: none;
+}
+
+.dice-container label {
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+}
+
+
+.container {
+    display: grid;
+    border: 1px solid steelblue;
+    padding: 30px;
+    border-radius: 5px;
+    width: 475px;
+}
+
+#btnRoll {
+    font-size: 25px;
+    padding: 25px 50px 25px 50px;
+    float: right;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: lightsteelblue;
+
+}
+
+#turn-number-and-roll {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+#spanTurn {
+    font-size: 25px;
+}
+
+
+
+#gridContainerScore {
+    display: grid;
+    /*grid-template-columns: 6rem 6rem 6rem 6rem;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+
+}
+
+.column1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.column2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    text-align: center;
+}
+
+.column3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+.column4 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+}
+
+.row1 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.row2 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.row3 {
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.row4 {
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+.row5 {
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+.row6 {
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+.row7 {
+    grid-row-start: 7;
+    grid-row-end: 7;
+}
+.row8 {
+    grid-row-start: 8;
+    grid-row-end: 8;
+}
+.row9 {
+    grid-row-start: 9;
+    grid-row-end: 9;
+}
+.row10 {
+    grid-row-start: 10;
+    grid-row-end: 10;
+}
+.row11 {
+    grid-row-start: 11;
+    grid-row-end: 11;
+}
+.row12 {
+    grid-row-start: 12;
+    grid-row-end: 12;
+}
+.row13 {
+    grid-row-start: 13;
+    grid-row-end: 13;
+}
+.row14 {
+    grid-row-start: 14;
+    grid-row-end: 14;
+}
+.row15 {
+    grid-row-start: 15;
+    grid-row-end: 15;
+}
+
+.pointoutput {
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.blink {
+    animation: blinker 0.5s;
+}
+
+@keyframes blinker {
+    50% {
+        background: lightblue;
+    }
+    100% {
+        background: white;
+    }
+}
+
+

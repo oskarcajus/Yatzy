@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Yatzy</title>
+    <script src="../js/Yatzy.js" defer></script>
+    <script src="../js/frontend.js" defer></script>
+</head>
+<body>
+
+<div class="grid-wrapper">
+    <h1>Yatzy</h1>
+    <div class="container">
+        <div class="dice-container">
+            <input type="checkbox" class="dice" id="dice1" value="1"/>
+            <label for="dice1"><img src="../img/question-mark.png" alt="dice"/></label>
+            <input type="checkbox" class="dice" id="dice2" value="2"/>
+            <label for="dice2"><img src="../img/question-mark.png" alt="dice"/></label>
+            <input type="checkbox" class="dice" id="dice3" value="3"/>
+            <label for="dice3"><img src="../img/question-mark.png" alt="dice"/></label>
+            <input type="checkbox" class="dice" id="dice4" value="4"/>
+            <label for="dice4"><img src="../img/question-mark.png" alt="dice"/></label>
+            <input type="checkbox" class="dice" id="dice5" value="5"/>
+            <label for="dice5"><img src="../img/question-mark.png" alt="dice"/></label>
+        </div>
+        <div id="turn-number-and-roll">
+            <span id="spanTurn"> Turn: 0/3</span>
+            <button id="btnRoll">Roll</button>
+        </div>
+    </div>
+    <div class="container">
+        <h4 id="h4Round">Round: 0/15</h4>
+        <div id="gridContainerScore">
+            <p class="column1 row1">1-s</p>
+            <p class="column1 row2">2-s</p>
+            <p class="column1 row3">3-s</p>
+            <p class="column1 row4">4-s</p>
+            <p class="column1 row5">5-s</p>
+            <p class="column1 row6">6-s</p>
+            <p class="column1 row7">One pair</p>
+            <p class="column1 row8">Two pairs</p>
+            <p class="column1 row9">Three same</p>
+            <p class="column1 row10">Four same</p>
+            <p class="column1 row11">Full house</p>
+            <p class="column1 row12">Small straight</p>
+            <p class="column1 row13">Large straight</p>
+            <p class="column1 row14">Chance</p>
+            <p class="column1 row15">Yatzy</p>
+            <input type="checkbox" class="checkboxPointOutput" id="ones"/>
+            <label for="ones" class="column2 row1 pointoutput" id="ones-output">0</label>
+            <input type="checkbox" class="checkboxPointOutput" id="twos"/>
+            <label for="twos" class="column2 row2 pointoutput" id="twos-output">0</label>
+            <input type="checkbox" class="checkboxPointOutput" id="threes"/>
+            <label for="threes" class="column2 row3 pointoutput" id="threes-output">0</label>
+            <input type="checkbox" class="checkboxPointOutput" id="fours"/>
+            <label for="fours" class="column2 row4 pointoutput" id="fours-output">0</label>
+            <input type="checkbox" class="checkboxPointOutput" id="fives"/>
+            <label for="fives" class="column2 row5 pointoutput" id="fives-output">0</label>
+            <input type="checkbox" class="checkboxPointOutput" id="sixes"/>
+            <label for="sixes" class="column2 row6 pointoutput" id="sixes-output">0</label>
+            <input type="checkbox" class="checkboxPointOutput" id="one-pair"/>
+            <label for="one-pair" class="column2 row7 pointoutput" id="onepair-output">0</label>
+            <input type="checkbox" class="checkboxPointOutput" id="two-pairs"/>
+            <label for="two-pairs" class="column2 row8 pointoutput" id="twopairs-output">0</label>
+            <input type="checkbox" class="checkboxPointOutput" id="three-same"/>
+            <label for="three-same" class="column2 row9 pointoutput" id="threesame-output">0</label>
+            <input type="checkbox" class="checkboxPointOutput" id="four-same"/>
+            <label for="four-same" class="column2 row10 pointoutput" id="foursame-output">0</label>
+            <input type="checkbox" class="checkboxPointOutput" id="full-house"/>
+            <label for="full-house" class="column2 row11 pointoutput" id="fullhouse-output">0</label>
+            <input type="checkbox" class="checkboxPointOutput" id="small-straight"/>
+            <label for="small-straight" class="column2 row12 pointoutput" id="smallstraight-output">0</label>
+            <input type="checkbox" class="checkboxPointOutput" id="large-straight"/>
+            <label for="large-straight" class="column2 row13 pointoutput" id="largestraight-output">0</label>
+            <input type="checkbox" class="checkboxPointOutput" id="chance"/>
+            <label for="chance" class="column2 row14 pointoutput" id="chance-output">0</label>
+            <input type="checkbox" class="checkboxPointOutput" id="yatzy"/>
+            <label for="yatzy" class="column2 row15 pointoutput" id="yatzy-output">0</label>
+
+            <p class="p-output column3 row6" id="sum-output"><label for="sum-output">Sum: </label>0</p>
+
+            <p class="p-output column4 row6" id="bonus-output"><label for="bonus-output">Bonus: </label>0</p>
+            <p class="p-output column4 row15" id="total-output"><label for="total-output">Total: </label>0</p>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
